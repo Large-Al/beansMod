@@ -1,0 +1,15 @@
+{
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2020-02-17 17:02:15 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:giant_tree_taiga": "2020-02-17 16:01:31 -0500"
+    },
+    "done": false
+  },
+  "DataVersion": 2230
+}
