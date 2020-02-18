@@ -15,11 +15,13 @@ public class beansItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
+        
         if (playerEntity.getMainHandStack().getItem() == beansMod.BEANS_CLOSED_ITEM) {
-            //When right clicked, the closed can of beans (BEANS_CLOSED_ITEM) will be replaced with the open can of beans (BEANS_ITEM)
-
+            //When right clicked, the closed can of beans (BEANS_CLOSED_ITEM) will be removed and an open can of beans (BEANS_ITEM) will be added
+            
             playerEntity.inventory.getMainHandStack().decrement(1);
             playerEntity.inventory.insertStack(new ItemStack(beansMod.BEANS_ITEM));
+        
         }
         return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
     }
