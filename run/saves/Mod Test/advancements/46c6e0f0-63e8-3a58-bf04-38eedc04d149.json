@@ -1,0 +1,9 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:giant_tree_taiga": "2020-02-18 16:48:39 -0500"
+    },
+    "done": false
+  },
+  "DataVersion": 2230
+}
