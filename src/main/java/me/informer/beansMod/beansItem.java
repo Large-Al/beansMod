@@ -8,6 +8,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
+
 public class beansItem extends Item {
     public beansItem(Settings settings) {
         super(settings);
@@ -25,4 +26,6 @@ public class beansItem extends Item {
         }
         return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
     }
+
+
 }
